@@ -14,6 +14,7 @@
 		D7A001342623D01800623F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A001322623D01800623F61 /* LaunchScreen.storyboard */; };
 		D7A0013E2623D09C00623F61 /* BountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0013D2623D09C00623F61 /* BountyViewController.swift */; };
 		D7C214522623E09D0074BFE2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C214512623E09D0074BFE2 /* DetailViewController.swift */; };
+		D7C2145626242F0A0074BFE2 /* BountyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2145526242F0A0074BFE2 /* BountyInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D7A001352623D01800623F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7A0013D2623D09C00623F61 /* BountyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewController.swift; sourceTree = "<group>"; };
 		D7C214512623E09D0074BFE2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D7C2145526242F0A0074BFE2 /* BountyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		D7A001262623D01700623F61 /* BountyList */ = {
 			isa = PBXGroup;
 			children = (
+				D7C2145426242EF40074BFE2 /* Model */,
 				D7A001272623D01700623F61 /* AppDelegate.swift */,
 				D7A001292623D01700623F61 /* SceneDelegate.swift */,
 				D7A0013D2623D09C00623F61 /* BountyViewController.swift */,
@@ -68,6 +71,14 @@
 				D7A001352623D01800623F61 /* Info.plist */,
 			);
 			path = BountyList;
+			sourceTree = "<group>";
+		};
+		D7C2145426242EF40074BFE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7C2145526242F0A0074BFE2 /* BountyInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C2145626242F0A0074BFE2 /* BountyInfo.swift in Sources */,
 				D7A001282623D01700623F61 /* AppDelegate.swift in Sources */,
 				D7A0013E2623D09C00623F61 /* BountyViewController.swift in Sources */,
 				D7A0012A2623D01700623F61 /* SceneDelegate.swift in Sources */,
