@@ -104,18 +104,52 @@
                                     <action selector="close:" destination="Iui-TX-wlG" eventType="touchUpInside" id="evB-a6-9uc"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qkh-S4-JW5">
+                                <rect key="frame" x="87" y="128" width="240" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="D3F-xY-EXY"/>
+                                    <constraint firstAttribute="width" constant="240" id="V0w-fF-Z9j"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppU-1P-don">
+                                <rect key="frame" x="186.5" y="504" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1m-uj-pA3">
+                                <rect key="frame" x="168.5" y="434" width="77" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TNH-SH-cjf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="TNH-SH-cjf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="q1m-uj-pA3" secondAttribute="trailing" id="DE1-tk-7FJ"/>
+                            <constraint firstItem="TNH-SH-cjf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ppU-1P-don" secondAttribute="trailing" id="HLj-VX-4wI"/>
+                            <constraint firstItem="q1m-uj-pA3" firstAttribute="top" secondItem="Qkh-S4-JW5" secondAttribute="bottom" constant="64" id="OWz-bv-K3h"/>
+                            <constraint firstItem="Qkh-S4-JW5" firstAttribute="top" secondItem="TNH-SH-cjf" secondAttribute="top" constant="128" id="Tbk-LO-x6T"/>
+                            <constraint firstItem="q1m-uj-pA3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TNH-SH-cjf" secondAttribute="leading" id="W2S-oe-oLI"/>
                             <constraint firstItem="oRC-oB-Pte" firstAttribute="top" secondItem="TNH-SH-cjf" secondAttribute="top" constant="16" id="WKb-gk-bwd"/>
+                            <constraint firstItem="ppU-1P-don" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TNH-SH-cjf" secondAttribute="leading" id="ZkL-pu-fgq"/>
+                            <constraint firstItem="ppU-1P-don" firstAttribute="top" secondItem="q1m-uj-pA3" secondAttribute="bottom" constant="34" id="bzT-IA-LcL"/>
+                            <constraint firstItem="q1m-uj-pA3" firstAttribute="centerX" secondItem="Qkh-S4-JW5" secondAttribute="centerX" id="cqK-Ft-HIB"/>
+                            <constraint firstItem="ppU-1P-don" firstAttribute="centerX" secondItem="Qkh-S4-JW5" secondAttribute="centerX" id="m4w-gY-6a5"/>
                             <constraint firstItem="TNH-SH-cjf" firstAttribute="trailing" secondItem="oRC-oB-Pte" secondAttribute="trailing" constant="16" id="sye-cb-OHg"/>
+                            <constraint firstItem="Qkh-S4-JW5" firstAttribute="centerX" secondItem="5Mn-v8-6Mz" secondAttribute="centerX" id="u32-5O-5tw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bountyLabel" destination="ppU-1P-don" id="dOG-fb-eZA"/>
+                        <outlet property="imgView" destination="Qkh-S4-JW5" id="dpY-fL-3K6"/>
+                        <outlet property="nameLabel" destination="q1m-uj-pA3" id="i4y-h6-qXK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4sG-1D-WaO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="619" y="101"/>
+            <point key="canvasLocation" x="618.84057971014499" y="100.44642857142857"/>
         </scene>
     </scenes>
     <resources>

@@ -14,6 +14,18 @@ class BountyViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // DetailViewController에게 데이터를 줄 작업
+        if segue.identifier == "showDetail" {
+            let vc = segue.destination as? DetailViewController
+            if let index = sender as? Int {
+                vc?.name = nameList[index]
+                vc?.bounty = bountyList[index]
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -57,7 +69,7 @@ extension BountyViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("selected cell num : \(indexPath.row)")
         
-        performSegue(withIdentifier: "showDetail", sender: nil)
+        performSegue(withIdentifier: "showDetail", sender: indexPath.row)
     }
     
 }
