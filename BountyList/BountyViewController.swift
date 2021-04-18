@@ -25,6 +25,7 @@ class BountyViewController: UIViewController {
     // > BountyViewModel 만들고, 뷰레이어에서 필요한 메소드 만드릭.
     // > 모델 가지고 있기 ..
     
+    let tableView = UITableView()
     let viewModel = BountyViewModel()
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -69,10 +70,14 @@ extension BountyViewController:  UICollectionViewDataSource, UICollectionViewDel
         let testAreaHeight: CGFloat = 65
         let width: CGFloat = (collectionView.bounds.width - itemSpacing) / 2
         let height: CGFloat = width * 10/7 + testAreaHeight
-        
+            
         return CGSize(width: width, height: height)
     }
     
+    
+}
+
+extension BountyViewController: UITableViewDelegate {
     
 }
 
